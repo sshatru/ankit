@@ -1,0 +1,733 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG Legal - Business Registration & Legal Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                },
+                fontFamily: {
+                    sans: ["Inter", "var(--font-sans)"],
+                }
+            },
+        }
+    };
+    </script>
+    <style>
+        :root {
+            --background: hsl(0 0% 100%);
+            --foreground: hsl(222 84% 4.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222 84% 4.9%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(222 84% 4.9%);
+            --primary: hsl(221 83% 53%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(210 40% 96%);
+            --secondary-foreground: hsl(222 47% 11%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215 16% 47%);
+            --accent: hsl(20 94% 55%);
+            --accent-foreground: hsl(222 47% 11%);
+            --destructive: hsl(0 84% 60%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(214 32% 91%);
+            --input: hsl(214 32% 91%);
+            --ring: hsl(221 83% 53%);
+            --radius: 8px;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, hsl(221 83% 53%) 0%, hsl(239 84% 67%) 100%);
+        }
+        
+        .testimonial-slider {
+            scroll-behavior: smooth;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-4px);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-background text-foreground font-sans">
+
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm border-b border-border sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="text-2xl font-bold text-primary">
+                    RPG Legal
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-foreground hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="text-foreground hover:text-primary transition-colors">Services</a>
+                    <a href="#about" class="text-foreground hover:text-primary transition-colors">About Us</a>
+                    <a href="#testimonials" class="text-foreground hover:text-primary transition-colors">Testimonials</a>
+                    <a href="#contact" class="text-foreground hover:text-primary transition-colors">Contact Us</a>
+                    <a href="tel:+919319266200" class="bg-accent text-accent-foreground px-4 py-2 rounded-md font-medium hover:bg-accent/90 transition-colors">
+                        <i class="fas fa-phone mr-2"></i>+91-9319-266-200
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-foreground">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-primary-foreground py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Let's start and grow your business
+                    </h1>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Business Startup</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Registration & Licenses</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Accounting & Taxation</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Business Planning & Management</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Legislative & Legal Services</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Payroll & Labour Law Compliances</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Intellectual Property Rights</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#services" class="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold text-lg hover:bg-accent/90 transition-colors inline-block">
+                        Explore All Our Services
+                    </a>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20">
+                    <h3 class="text-2xl font-semibold mb-6">Request Appointment</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Name *" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/80 text-white focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Email *" required class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/80 text-white focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Phone Number" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/80 text-white focus:ring-2 focus:ring-accent focus:border-transparent">
+                        </div>
+                        <div>
+                            <textarea placeholder="Comment" rows="4" class="w-full px-4 py-3 rounded-lg bg-white/20 border border-white/30 placeholder-white/80 text-white focus:ring-2 focus:ring-accent focus:border-transparent resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-accent text-accent-foreground py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                            Request Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    Our Most Popular Services
+                </h2>
+                <p class="text-xl text-muted-foreground">
+                    Committed To Helping Our Clients Succeed
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Start A Business</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Start your business with any business entities like Proprietorship, Partnership, Limited Liability Partnership, Private Limited Company, One Person Company, Limited Company, Nidhi Company, Association of Persons (AOP), Trust, Society and Section 8 Company.
+                    </p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">IPR Services</h3>
+                    <p class="text-muted-foreground mb-6">
+                        We provides the entire range of services required to register and maintain protection for your intellectual property assets. trademarks, copyrights, designs & patents. We can also help you with trademark objection and trademark opposition and renewal.
+                    </p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">License And Registration</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Government License and Registration are mandatory to start and run the business in India, We do assist on all type of mandatory and industry based licenses such as Shop and Est, PSARA, MSME, Trade License, Import Export, GST, Drug License, FSSAI etc.
+                    </p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Payroll And Labour Law</h3>
+                    <p class="text-muted-foreground mb-6">
+                        Payroll processing and follow Labour Law is a highly complex task for most businesses due to the various compliance requirements in India. We take care of payroll and all statutory compliance like PT, PF and ESIC Return Filing and maintaining statutory Registers and Records.
+                    </p>
+                </div>
+
+                <!-- Service Card 5 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-file-invoice text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">GST Services</h3>
+                    <p class="text-muted-foreground mb-6">
+                        We provides end-to-end GST services from GST registration to GST return and compliance. You can easily create invoices, track expenses, manage inventory and file GST returns through our cloud-based GST software. Get in touch with our Experts for GST related advisory.
+                    </p>
+                </div>
+
+                <!-- Service Card 6 -->
+                <div class="service-card bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Taxation And Compliance</h3>
+                    <p class="text-muted-foreground mb-6">
+                        We provide a complete range of compliance solutions from tax registration to tax return filing. Obtain tax registration or file returns with the Income Tax Department, ESI Department, PF Department, Custom Department, Ministry of Corporate Affairs and more.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                    View All Practice Areas
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    Our Strong Position And Standings
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-globe text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Online And Transparent Process</h3>
+                    <p class="text-muted-foreground">
+                        Our process is designed to deliver swift and reliable services, most services provided through online mode with complete transparency.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-tag text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Dynamic Pricing Module</h3>
+                    <p class="text-muted-foreground">
+                        Our services are based on the concept of pay for actual usage of our time/ services, which is suitable for any level of your requirement.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gift text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Referral Bonus</h3>
+                    <p class="text-muted-foreground">
+                        On every referral, we gave three months free GST & TDS return filing or referral points that can be redeemed in any of our services.
+                    </p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-home text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Doorstep Services</h3>
+                    <p class="text-muted-foreground">
+                        On your request, An expert will visit your office to discuss the object & scope of your startup plan and also advise you on the appropriate mode of your startup like LLP, Private Limited, etc.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-tie text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Vast Pool Of Professionals</h3>
+                    <p class="text-muted-foreground">
+                        We are an organized team of experienced Chartered Accountant, Company Secretary, and Lawyers, duly supported by a pool of trained accountants and paralegal staff.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-money-bill-wave text-accent text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Money-Back Guarantee</h3>
+                    <p class="text-muted-foreground">
+                        We offer you a 90-day money-back guarantee on every service you rendered. However, We're confident that our services and professionalism will match your desire.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-primary-foreground">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Skip Travel! Consult with Experts now
+            </h2>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
+                <a href="tel:+919319266200" class="text-2xl font-semibold">
+                    <i class="fas fa-phone mr-3"></i>+91-9319-266-200
+                </a>
+                <a href="#contact" class="bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                    Request Appointment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    What Our Clients Have To Say
+                </h2>
+                <p class="text-xl text-muted-foreground">
+                    We take pride! Not in our execution, But in your words. Here's what keeps us going strong.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Smiling business professional headshot -->
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Apoorva Bhargav" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Apoorva Bhargav</h4>
+                            <p class="text-muted-foreground">Co-Founder, EDEN IAS</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "We started with a Private Limited company incorporation for our Educational Institute. We have been taking the services from last two years and had an amazing service experience with the team. Smooth work everything was completed on time with perfection."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional male doctor/medical professional -->
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Dr. Pradyumana Singh" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Dr. Pradyumana Singh</h4>
+                            <p class="text-muted-foreground">MD & Founder - ISPL</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "Had an outstanding experience working with RPG Legal to set up my company & Trademark Registration. Even minute details were explained and all aspects provided. Ready to support beyond hours, hat's off guys."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional business executive -->
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Prashant Singh" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Prashant Singh</h4>
+                            <p class="text-muted-foreground">Director, ShiftPurple & Nextdot</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "It was a very immeasurable experience in setting up my company. The team are professional & understands the need and executes at the pace needed. I really appreciate & recommend."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Young professional business person -->
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Vaibhav Vishal Srivastava" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Vaibhav Vishal Srivastava</h4>
+                            <p class="text-muted-foreground">Director, Certslearning Pvt Ltd</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "Dedicated, supportive and understanding team… What else do we need to get the jobs done? Thanks to RPG Legal for helping us. And I hope this will be maintained as you already established a great business relationship."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Confident business professional -->
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Sumit Ghugharwal" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Sumit Ghugharwal</h4>
+                            <p class="text-muted-foreground">Director, Ghugharmedia Pvt Ltd</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "Highly supporting system for new business.. Thank you RPG Legal for providing every type of business-related support to new in the field like me… and want to really appreciate the work of Mr Anand."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <div class="flex items-center mb-6">
+                        <!-- Professional entrepreneur -->
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150" alt="Saajib Zaman" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-lg font-semibold">Saajib Zaman</h4>
+                            <p class="text-muted-foreground">Founder, Proict LLC</p>
+                        </div>
+                    </div>
+                    <p class="text-muted-foreground mb-4">
+                        "We're using your services form the last three years. We are delighted with the way solutions are provided in matters we have endeavoured professional help. We admire the association and look forward to a similar experience."
+                    </p>
+                    <div class="flex text-accent">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Companies Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                    We Are Trusted By Leading Companies
+                </h2>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">ShiftPurple</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Sketch Design</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Healthy Naturals</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Nextdot</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">GLA</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Avijaa</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Eden IAS</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Marte Films</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Ghugharmedia</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Brewing Co</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">BookGuru</div>
+                </div>
+                <div class="flex items-center justify-center p-4 border border-border rounded-lg bg-card hover:shadow-md transition-shadow">
+                    <div class="text-2xl font-bold text-muted-foreground">Crivera</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-muted/30">
+        <div class="container mx-auto px-4">
+            <div class="max-w-2xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                        Request Appointment
+                    </h2>
+                    <p class="text-xl text-muted-foreground">
+                        Get in touch with our experts for professional consultation
+                    </p>
+                </div>
+                
+                <div class="bg-card border border-border rounded-xl p-8">
+                    <form class="space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Name *</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg border border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 rounded-lg border border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-3 rounded-lg border border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-foreground mb-2">Message</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg border border-input bg-background focus:ring-2 focus:ring-ring focus:border-transparent resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
+                            Request Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-foreground text-background py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="text-2xl font-bold mb-4">RPG Legal</div>
+                    <p class="text-background/80 mb-6">
+                        Professional legal and business consultation services to help your business grow and comply with regulations.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-background/80 hover:text-background transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-background/80 hover:text-background transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-background/80 hover:text-background transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-background/80 hover:text-background transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Business Startup</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">IPR Services</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">License & Registration</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">GST Services</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Taxation & Compliance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">About Us</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Compliance Calendar</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Payment Mode</a></li>
+                        <li><a href="#" class="text-background/80 hover:text-background transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-phone text-accent"></i>
+                            <span class="text-background/80">+91-9319-266-200</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i class="fas fa-envelope text-accent"></i>
+                            <span class="text-background/80">info@rpglegal.co.in</span>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-map-marker-alt text-accent mt-1"></i>
+                            <span class="text-background/80">New Delhi, India</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-background/20 mt-12 pt-8 text-center">
+                <p class="text-background/80">
+                    © 2024 RPG Legal. All rights reserved. | Privacy Policy | Terms of Service
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        (function() {
+            // Mobile menu functionality
+            const mobileMenuButton = document.querySelector('.md\\:hidden button');
+            const nav = document.querySelector('nav');
+            
+            if (mobileMenuButton) {
+                mobileMenuButton.addEventListener('click', function() {
+                    // TODO: Implement mobile menu toggle
+                    console.log('Mobile menu toggle');
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Form validation and submission
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    // TODO: Implement form validation and submission logic
+                    console.log('Form submitted');
+                });
+            });
+        })();
+    </script>
+</body>
+</html>
